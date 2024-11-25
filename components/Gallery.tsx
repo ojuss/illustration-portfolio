@@ -6,10 +6,10 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import Image from "next/image";
 import Cell from "@/assets/1 CELL.png"
 import Pic2 from "@/assets/0056.png"
-import Pic3 from "@/assets/Brain and molecule.png"
-import Pic4 from "@/assets/not submitted.png"
+// import Pic3 from "@/assets/Brain and molecule.png"
+// import Pic4 from "@/assets/not submitted.png"
 import Pic5 from "@/assets/Osh sub2.png"
-import Pic6 from "@/assets/pathogen-macrophage final.png"
+// import Pic6 from "@/assets/pathogen-macrophage final.png"
 
 const artworks = [
   {
@@ -30,14 +30,14 @@ const artworks = [
     id: 3,
     title: "DNA Helix",
     category: "Molecular Biology",
-    image: Pic3,
+    image: Cell,
     height: 800
   },
   {
     id: 4,
     title: "DNA Helix",
     category: "Molecular Biology",
-    image: Pic4,
+    image: Cell,
     height: 800
   },
   {
@@ -51,7 +51,7 @@ const artworks = [
     id: 6,
     title: "DNA Helix",
     category: "Molecular Biology",
-    image: Pic6,
+    image: Pic5,
     height: 1000
   },
   // Add more artwork items here with varying heights

@@ -1,6 +1,10 @@
 "use client";
 
 import { helix, quantum } from "ldrs";
+import { Lato, Alegreya } from "next/font/google";
+
+const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
+const alegreya = Alegreya({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function Hero() {
   helix.register();
@@ -16,12 +20,17 @@ export default function Hero() {
               <l-helix size="150" speed="7" color="white"></l-helix>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
-              Hello! I'm Osh
+            <h1
+              className={`text-4xl md:text-6xl mb-6 text-white ${alegreya.className}`}
+            >
+              Illustrating Ideas, Illuminating Science.
             </h1>
 
-            <p className="text-lg text-gray-300 max-w-xl mb-8">
-            I create designs that make scientific knowledge clear, engaging, and accessible to a broader audience.
+            <p
+              className={`text-lg text-gray-300 max-w-xl mb-8 ${lato.className}`}
+            >
+              I create designs that make scientific knowledge clear, engaging,
+              and accessible to a broader audience.
             </p>
 
             <div>
@@ -33,7 +42,7 @@ export default function Hero() {
               </a>
               <a
                 href="#about"
-                className="inline-block bg-purple-500 text-white px-8 py-3 rounded-full font-medium hover:bg-purple-400 transition-colors"
+                className="inline-block bg-purple-500 text-white px-8 py-3 rounded-full font-medium hover:bg-purple-400 transition-colors "
               >
                 About Me
               </a>

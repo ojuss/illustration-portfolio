@@ -1,12 +1,15 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import "./globals.css";
+import type { Metadata } from "next";
 
-const inter = Inter({ subsets: ['latin'] });
+import { Alegreya, Lato } from "next/font/google";
+
+const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
+
+const alegreya = Alegreya({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
-  title: 'Scientific Illustrator Portfolio',
-  description: 'Portfolio showcasing scientific illustrations and artwork',
+  title: "Scientific Illustrator Portfolio",
+  description: "Portfolio showcasing scientific illustrations and artwork",
 };
 
 export default function RootLayout({
@@ -16,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>{children}</body>
+      <body className={` ${lato.className}`}>
+        {children}
+      </body>
     </html>
   );
 }

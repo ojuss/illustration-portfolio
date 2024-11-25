@@ -44,7 +44,7 @@
 }
 
 .bgimg {
-  background-image: url("../assets/render cell attachment.png");
+  background-image: url("../assets/virus.png");
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
@@ -54,7 +54,7 @@ body {
   @apply bg-background text-foreground;
   background-image: radial-gradient(
     circle at center,
-    rgba(20, 174, 123, 0.05) 0%,
+    rgba(199, 238, 225, 0.05) 0%,
     transparent 100%
   );
 }
