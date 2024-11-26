@@ -1,6 +1,6 @@
 "use client";
 
-import { helix, quantum } from "ldrs";
+import { helix } from "ldrs";
 import { Lato, Alegreya } from "next/font/google";
 
 const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });

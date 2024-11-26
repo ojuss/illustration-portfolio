@@ -2,14 +2,13 @@
 
 import React from "react";
 import Logo from "./Logo";
-import SocialLinks from "./SocialLinks";
 import OshPic from "@/assets/oshpfp.jpg";
 import Image from "next/image";
 import { Alegreya } from "next/font/google";
-import { quantum } from "ldrs";
+
 
 const alegreya = Alegreya({ subsets: ["latin"], weight: ["400", "700"] });
-quantum.register();
+
 
 const AboutSection = () => {
   return (
