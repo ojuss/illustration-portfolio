@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Cell from "@/assets/1 CELL.png";
 import Pic2 from "@/assets/0056.png";
