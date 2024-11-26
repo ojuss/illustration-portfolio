@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import About from "@/components/About";
+import AboutSection from "@/components/About";
 import Portfolio from "@/components/Portfolio";
 import Contact from "@/components/Contact";
 
@@ -8,7 +8,7 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <Hero />
       <Portfolio />
-      <About />
+      <AboutSection />
       <Contact />
     </main>
   );

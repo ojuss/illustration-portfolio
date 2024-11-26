@@ -10,7 +10,7 @@ const alegreya = Alegreya({ subsets: ["latin"], weight: ["400", "700"] });
 
 const AboutSection = () => {
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6 ">
+    <div id="about" className="min-h-screen bg-gray-50 flex items-center justify-center p-6 ">
       <div className="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-2  items-center">
         <div className="relative ">
           

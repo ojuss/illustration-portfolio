@@ -2,15 +2,22 @@
 
 import { helix } from "ldrs";
 import { Lato, Alegreya } from "next/font/google";
+import dynamic from 'next/dynamic';
+import { useEffect } from "react";
 
 const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 const alegreya = Alegreya({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function Hero() {
-  helix.register();
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      helix.register();
+    }
+  }, []);
 
   return (
-    <section className="min-h-screen relative overflow-hidden flex items-center bgimg">
+    <section  className="min-h-screen relative overflow-hidden flex items-center bgimg">
       <div className="absolute inset-0 bg-gradient-to-b from-accent to-background/0" />
 
       <div className="container px-4 mx-auto">
