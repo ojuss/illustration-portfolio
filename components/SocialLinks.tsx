@@ -1,5 +1,3 @@
-"use client"
-
 import React from "react";
 import { Linkedin, Mail } from "lucide-react";
 

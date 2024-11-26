@@ -134,5 +134,4 @@ const artworks = [
     image: Pic5,
     height: 1000,
   },
-  // Add more artwork items here with varying heights
 ];

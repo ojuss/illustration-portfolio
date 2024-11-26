@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, MapPin, Phone } from "lucide-react";
 import { Alegreya } from "next/font/google";
 import SocialLinks from "./SocialLinks";
 
