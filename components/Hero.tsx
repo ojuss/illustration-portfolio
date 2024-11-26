@@ -23,7 +23,7 @@ export default function Hero() {
             <h1
               className={`text-4xl md:text-6xl mb-6 text-white ${alegreya.className}`}
             >
-              Illustrating Ideas, Illuminating Science.
+              Illustrating Ideas, Illuminating <span className="bg-slate-600 bg-gradient-to-r from-cyan-300 to-pink-600 text-transparent bg-clip-text">Science.</span>
             </h1>
 
             <p
@@ -36,13 +36,13 @@ export default function Hero() {
             <div>
               <a
                 href="#portfolio"
-                className="inline-block bg-[#5dbbf2] text-white px-8 py-3 rounded-full font-medium hover:bg-teal-400 transition-colors mr-4"
+                className="inline-block bg-[#5dbbf2] text-white px-8 py-3 rounded-full font-medium hover:bg-blue-400 transition-colors mr-4"
               >
                 View Portfolio
               </a>
               <a
                 href="#about"
-                className="inline-block bg-[#2d375d] text-white px-8 py-3 rounded-full font-medium hover:bg-purple-400 transition-colors "
+                className="inline-block bg-[#2d375d] text-white px-8 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors "
               >
                 About Me
               </a>

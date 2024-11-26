@@ -50,6 +50,8 @@
   background-repeat: no-repeat;
 }
 
+
+
 body {
   @apply bg-background text-foreground;
   background-image: radial-gradient(

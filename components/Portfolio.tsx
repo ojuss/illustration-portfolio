@@ -21,13 +21,7 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="py-20 bg-gray-100">
       <div className="container px-4 mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <h2
             className={`text-5xl font-bold mb-4 text-black ${alegreya.className}`}
           >
@@ -38,7 +32,7 @@ export default function Portfolio() {
             intricate details and beauty of scientific concepts through artistic
             visualization.
           </p>
-        </motion.div>
+        </div>
 
         <div className="gallery-grid">
           {artworks.map((artwork, index) => (
