@@ -2,66 +2,24 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
 import Image from "next/image";
-import Cell from "@/assets/1 CELL.png"
-import Pic2 from "@/assets/0056.png"
+import Cell from "@/assets/1 CELL.png";
+import Pic2 from "@/assets/0056.png";
 // import Pic3 from "@/assets/Brain and molecule.png"
 // import Pic4 from "@/assets/not submitted.png"
-import Pic5 from "@/assets/Osh sub2.png"
+import Pic5 from "@/assets/Osh sub2.png";
 // import Pic6 from "@/assets/pathogen-macrophage final.png"
+import { Alegreya } from "next/font/google";
 
-const artworks = [
-  {
-    id: 1,
-    title: "Cell Structure",
-    category: "Biology",
-    image: Pic2,
-    height: 600
-  },
-  {
-    id: 2,
-    title: "Neural Network",
-    category: "Neuroscience",
-    image: Cell,
-    height: 1000
-  },
-  {
-    id: 3,
-    title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Cell,
-    height: 800
-  },
-  {
-    id: 4,
-    title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Cell,
-    height: 800
-  },
-  {
-    id: 5,
-    title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Pic5,
-    height: 600
-  },
-  {
-    id: 6,
-    title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Pic5,
-    height: 1000
-  },
-  // Add more artwork items here with varying heights
-];
+const alegreya = Alegreya({ subsets: ["latin"], weight: ["400", "700"] });
 
-export default function Gallery() {
-  const [selectedImage, setSelectedImage] = useState<typeof artworks[0] | null>(null);
+export default function Portfolio() {
+  const [selectedImage, setSelectedImage] = useState<
+    (typeof artworks)[0] | null
+  >(null);
 
   return (
-    <section id="gallery" className="py-20">
+    <section id="portfolio" className="py-20 bg-gray-100">
       <div className="container px-4 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -70,10 +28,15 @@ export default function Gallery() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl font-bold mb-4">Gallery</h2>
+          <h2
+            className={`text-5xl font-bold mb-4 text-black ${alegreya.className}`}
+          >
+            Portfolio
+          </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Explore my collection of scientific illustrations, showcasing the intricate details
-            and beauty of scientific concepts through artistic visualization.
+            Explore my collection of scientific illustrations, showcasing the
+            intricate details and beauty of scientific concepts through artistic
+            visualization.
           </p>
         </motion.div>
 
@@ -89,7 +52,9 @@ export default function Gallery() {
               onClick={() => setSelectedImage(artwork)}
             >
               <div className="relative overflow-hidden">
-                <div style={{ paddingBottom: `${(artwork.height / 800) * 100}%` }} />
+                <div
+                  style={{ paddingBottom: `${(artwork.height / 800) * 100}%` }}
+                />
                 <Image
                   src={artwork.image}
                   alt={artwork.title}
@@ -99,8 +64,12 @@ export default function Gallery() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <h3 className="text-lg font-semibold text-primary mb-1">{artwork.title}</h3>
-                    <p className="text-sm text-primary/80">{artwork.category}</p>
+                    <h3 className="text-lg font-semibold text-primary mb-1">
+                      {artwork.title}
+                    </h3>
+                    <p className="text-sm text-primary/80">
+                      {artwork.category}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -110,12 +79,14 @@ export default function Gallery() {
       </div>
 
       {selectedImage && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-40 z-50" onClick={() => setSelectedImage(null)}>
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-40 z-50"
+          onClick={() => setSelectedImage(null)}
+        >
           <div className="relative">
             <Image
               src={selectedImage.image}
               alt={selectedImage.title}
-              
               height={selectedImage.height}
               className="object-contain"
             />
@@ -125,3 +96,49 @@ export default function Gallery() {
     </section>
   );
 }
+
+const artworks = [
+  {
+    id: 1,
+    title: "Cell Structure",
+    category: "Biology",
+    image: Pic2,
+    height: 600,
+  },
+  {
+    id: 2,
+    title: "Neural Network",
+    category: "Neuroscience",
+    image: Cell,
+    height: 1000,
+  },
+  {
+    id: 3,
+    title: "DNA Helix",
+    category: "Molecular Biology",
+    image: Cell,
+    height: 800,
+  },
+  {
+    id: 4,
+    title: "DNA Helix",
+    category: "Molecular Biology",
+    image: Cell,
+    height: 800,
+  },
+  {
+    id: 5,
+    title: "DNA Helix",
+    category: "Molecular Biology",
+    image: Pic5,
+    height: 600,
+  },
+  {
+    id: 6,
+    title: "DNA Helix",
+    category: "Molecular Biology",
+    image: Pic5,
+    height: 1000,
+  },
+  // Add more artwork items here with varying heights
+];

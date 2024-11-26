@@ -1,30 +1,35 @@
+"use client"
+
 import React from "react";
 import Logo from "./Logo";
 import SocialLinks from "./SocialLinks";
 import OshPic from "@/assets/oshpfp.jpg";
 import Image from "next/image";
 import { Alegreya } from "next/font/google";
-
+import { quantum } from "ldrs";
 
 const alegreya = Alegreya({ subsets: ["latin"], weight: ["400", "700"] });
+// quantum.register();
 
 const AboutSection = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6">
-      <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-2  items-center">
         <div className="relative">
-          <Logo />
+          
           <div className="mt-12 relative">
             <Image
               src={OshPic}
               alt="Osh's Pic"
-              className="w-auto h-[400px]  "
+              className="w-auto h-[500px]"
             />
           </div>
         </div>
 
         <div className="space-y-8">
-          <h1 className={`text-6xl font-bold tracking-wider text-gray-900 ${alegreya.className}`}>
+          <h1
+            className={`text-6xl font-bold tracking-wider text-gray-900 ${alegreya.className}`}
+          >
             Nice to meet you!
           </h1>
 
@@ -46,9 +51,11 @@ const AboutSection = () => {
             </p>
           </div>
 
-          <div className="pt-8">
+          {/* <div className="pt-8">
             <SocialLinks />
-          </div>
+          </div> */}
+          {/* <Logo /> */}
+          {/* <l-quantum size="100" speed="7" color="blue"/> */}
         </div>
       </div>
     </div>

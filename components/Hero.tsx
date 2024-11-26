@@ -7,7 +7,7 @@ const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 const alegreya = Alegreya({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function Hero() {
-  helix.register();
+  // helix.register();
 
   return (
     <section className="min-h-screen relative overflow-hidden flex items-center bgimg">
@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="z-10">
             <div className="mb-8 inline-block">
-              <l-helix size="150" speed="7" color="white"></l-helix>
+              {/* <l-helix size="150" speed="7" color="white"></l-helix> */}
             </div>
 
             <h1
@@ -27,7 +27,7 @@ export default function Hero() {
             </h1>
 
             <p
-              className={`text-lg text-gray-300 max-w-xl mb-8 ${lato.className}`}
+              className={`text-lg text-gray-50 max-w-xl mb-8 ${lato.className}`}
             >
               I create designs that make scientific knowledge clear, engaging,
               and accessible to a broader audience.
