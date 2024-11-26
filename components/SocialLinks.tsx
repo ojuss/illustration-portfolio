@@ -1,18 +1,33 @@
-import React from 'react';
-import { Twitter, Facebook, Instagram } from 'lucide-react';
+import React from "react";
+import { Instagram, Linkedin, Mail } from "lucide-react";
 
 const SocialLinks = () => {
   return (
-    <div className="flex gap-6 items-center">
-      <a href="#" className="text-gray-800 hover:text-gray-600 transition-colors">
-        <Twitter className="w-15 h-15" />
+    <div className="flex gap-10 items-center justify-center flex-col">
+      <div className="flex gap-10 items-center justify-center">
+      <a
+        href="#"
+        className="text-gray-800 hover:text-gray-600 transition-colors"
+      >
+        <Mail className="w-10 h-10" />
       </a>
-      <a href="#" className="text-gray-800 hover:text-gray-600 transition-colors">
-        <Facebook className="w-15 h-15" />
+      <a
+        href="#"
+        className="text-gray-800 hover:text-gray-600 transition-colors"
+      >
+        <Linkedin className="w-10 h-10" />
       </a>
-      <a href="#" className="text-gray-800 hover:text-gray-600 transition-colors">
-        <Instagram className="w-15 h-15" />
+      <a
+        href="#"
+        className="text-gray-800 hover:text-gray-600 transition-colors"
+      >
+        <Instagram className="w-10 h-10" />
       </a>
+      </div>
+      <p className="text-muted-foreground mb-4 md:mb-0">
+        © {new Date().getFullYear()} Osh Portfolio. All rights
+        reserved.
+      </p>
     </div>
   );
 };

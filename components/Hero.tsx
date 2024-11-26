@@ -7,7 +7,7 @@ const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 const alegreya = Alegreya({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function Hero() {
-  // helix.register();
+  helix.register();
 
   return (
     <section className="min-h-screen relative overflow-hidden flex items-center bgimg">
@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="z-10">
             <div className="mb-8 inline-block">
-              {/* <l-helix size="150" speed="7" color="white"></l-helix> */}
+              <l-helix size="150" speed="7" color="white"></l-helix>
             </div>
 
             <h1
@@ -35,14 +35,14 @@ export default function Hero() {
 
             <div>
               <a
-                href="#gallery"
-                className="inline-block bg-teal-500 text-white px-8 py-3 rounded-full font-medium hover:bg-teal-400 transition-colors mr-4"
+                href="#portfolio"
+                className="inline-block bg-[#5dbbf2] text-white px-8 py-3 rounded-full font-medium hover:bg-teal-400 transition-colors mr-4"
               >
-                View Gallery
+                View Portfolio
               </a>
               <a
                 href="#about"
-                className="inline-block bg-purple-500 text-white px-8 py-3 rounded-full font-medium hover:bg-purple-400 transition-colors "
+                className="inline-block bg-[#2d375d] text-white px-8 py-3 rounded-full font-medium hover:bg-purple-400 transition-colors "
               >
                 About Me
               </a>

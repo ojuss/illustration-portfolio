@@ -9,13 +9,13 @@ import { Alegreya } from "next/font/google";
 import { quantum } from "ldrs";
 
 const alegreya = Alegreya({ subsets: ["latin"], weight: ["400", "700"] });
-// quantum.register();
+quantum.register();
 
 const AboutSection = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6">
       <div className="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-2  items-center">
-        <div className="relative">
+        <div className="relative ">
           
           <div className="mt-12 relative">
             <Image
@@ -26,7 +26,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-8 mt-10">
           <h1
             className={`text-6xl font-bold tracking-wider text-gray-900 ${alegreya.className}`}
           >
@@ -54,8 +54,8 @@ const AboutSection = () => {
           {/* <div className="pt-8">
             <SocialLinks />
           </div> */}
-          {/* <Logo /> */}
-          {/* <l-quantum size="100" speed="7" color="blue"/> */}
+          <Logo />
+          {/* <l-quantum size="100" speed="7" color="black"/> */}
         </div>
       </div>
     </div>
