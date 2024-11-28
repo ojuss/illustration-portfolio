@@ -3,12 +3,21 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Cell from "@/assets/1 CELL.png";
+import Pic1 from "@/assets/1 CELL.png";
 import Pic2 from "@/assets/0056.png";
-// import Pic3 from "@/assets/Brain and molecule.png"
-// import Pic4 from "@/assets/not submitted.png"
+import Pic3 from "@/assets/ago2-mirna img.png";
+import Pic4 from "@/assets/closer interaction view_.png";
 import Pic5 from "@/assets/Osh sub2.png";
-// import Pic6 from "@/assets/pathogen-macrophage final.png"
+import Pic6 from "@/assets/graphene.png";
+import Pic7 from "@/assets/hb, rbc.png";
+import Pic8 from "@/assets/Osh sars cov2 illustration.png";
+import Pic9 from "@/assets/Osh submission.png";
+import Pic10 from "@/assets/osh submission1.png";
+import Pic11 from "@/assets/osh_molecule sub.png";
+import Pic12 from "@/assets/proj1 innate immunity-02.jpg";
+import Pic13 from "@/assets/proj2 adaptive immunity-01.jpg";
+import Pic14 from "@/assets/VHH.png";
+import Pic15 from "@/assets/virus.png";
 import { Alegreya } from "next/font/google";
 
 const alegreya = Alegreya({ subsets: ["latin"], weight: ["400", "700"] });
@@ -20,21 +29,18 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio" className="py-20 bg-gray-100">
-      <div className="container px-4 mx-auto">
-        <div className="text-center mb-16">
-          <h2
-            className={`text-5xl font-bold mb-4 text-black ${alegreya.className}`}
-          >
+      <div className="text-center mb-16">
+          <h2 className={`text-5xl mb-4 text-black ${alegreya.className}`}>
             Portfolio
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Explore my collection of scientific illustrations, showcasing the
-            intricate details and beauty of scientific concepts through artistic
-            visualization.
+            A showcase of ideas transformed into art.
           </p>
         </div>
+      <div className="container px-4 mx-auto overflow-x-scroll max-h-screen">
+        
 
-        <div className="gallery-grid">
+        <div className="gallery-grid ">
           {artworks.map((artwork, index) => (
             <motion.div
               key={artwork.id}
@@ -74,7 +80,7 @@ export default function Portfolio() {
 
       {selectedImage && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-40 z-50"
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center lg:px-40 p-4 z-50"
           onClick={() => setSelectedImage(null)}
         >
           <div className="relative">
@@ -82,7 +88,8 @@ export default function Portfolio() {
               src={selectedImage.image}
               alt={selectedImage.title}
               height={selectedImage.height}
-              className="object-contain"
+              className="object-contain pointer-events-none"
+              priority
             />
           </div>
         </div>
@@ -96,29 +103,29 @@ const artworks = [
     id: 1,
     title: "Cell Structure",
     category: "Biology",
-    image: Pic2,
+    image: Pic15,
     height: 600,
   },
   {
     id: 2,
     title: "Neural Network",
     category: "Neuroscience",
-    image: Cell,
-    height: 1000,
+    image: Pic3,
+    height: 600,
   },
   {
     id: 3,
     title: "DNA Helix",
     category: "Molecular Biology",
-    image: Cell,
-    height: 800,
+    image: Pic1,
+    height: 600,
   },
   {
     id: 4,
     title: "DNA Helix",
     category: "Molecular Biology",
-    image: Cell,
-    height: 800,
+    image: Pic4,
+    height: 600,
   },
   {
     id: 5,
@@ -131,7 +138,85 @@ const artworks = [
     id: 6,
     title: "DNA Helix",
     category: "Molecular Biology",
-    image: Pic5,
-    height: 1000,
+    image: Pic6,
+    height: 600,
   },
+  {
+    id: 7,
+    title: "DNA Helix",
+    category: "Molecular Biology",
+    image: Pic7,
+    height: 600,
+  },
+  {
+    id: 8,
+    title: "DNA Helix",
+    category: "Molecular Biology",
+    image: Pic8,
+    height: 600,
+  },
+  {
+    id: 9,
+    title: "DNA Helix",
+    category: "Molecular Biology",
+    image: Pic9,
+    height: 600,
+  },
+  {
+    id: 10,
+    title: "DNA Helix",
+    category: "Molecular Biology",
+    image: Pic10,
+    height: 600,
+  },
+  {
+    id: 11,
+    title: "DNA Helix",
+    category: "Molecular Biology",
+    image: Pic11,
+    height: 600,
+  },
+  {
+    id: 12,
+    title: "DNA Helix",
+    category: "Molecular Biology",
+    image: Pic12,
+    height: 600,
+  },
+  {
+    id: 13,
+    title: "DNA Helix",
+    category: "Molecular Biology",
+    image: Pic13,
+    height: 600,
+  },
+  {
+    id: 14,
+    title: "DNA Helix",
+    category: "Molecular Biology",
+    image: Pic14,
+    height: 600,
+  },
+  {
+    id: 15,
+    title: "DNA Helix",
+    category: "Molecular Biology",
+    image: Pic2,
+    height: 600,
+  },
+  {
+    id: 16,
+    title: "DNA Helix",
+    category: "Molecular Biology",
+    image: Pic13,
+    height: 600,
+  },
+  {
+    id: 17,
+    title: "DNA Helix",
+    category: "Molecular Biology",
+    image: Pic14,
+    height: 600,
+  },
+  
 ];

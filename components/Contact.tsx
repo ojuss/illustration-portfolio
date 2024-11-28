@@ -17,7 +17,7 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className={`text-3xl font-bold mb-4 text-black  ${alegreya.className}`}>
+          <h2 className={`text-3xl mb-4 text-black  ${alegreya.className}`}>
             Have a story to tell through scientific art? Let's bring it to
             life!"
           </h2>

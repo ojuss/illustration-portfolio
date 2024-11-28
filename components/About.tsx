@@ -1,61 +1,68 @@
 import React from "react";
 import Logo from "./Logo";
-import OshPic from "@/assets/oshpfp.jpg";
+import OshPic2 from "@/assets/oshpfp2.jpg";
 import Image from "next/image";
 import { Alegreya } from "next/font/google";
-
+import { School } from "lucide-react";
 
 const alegreya = Alegreya({ subsets: ["latin"], weight: ["400", "700"] });
 
-
 const AboutSection = () => {
   return (
-    <div id="about" className="min-h-screen bg-gray-50 flex items-center justify-center p-6 ">
-      <div className="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-2  items-center">
+    <section
+      id="about"
+      className="min-h-screen bg-gray-50 flex items-center justify-center p-6 "
+    >
+      <div className="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 items-center">
         <div className="relative ">
-          
+          <Logo />
           <div className="mt-12 relative">
             <Image
-              src={OshPic}
+              src={OshPic2}
               alt="Osh's Pic"
-              className="w-auto h-[500px]"
+              className="w-auto h-[450px] lg:h-[550px] md:h-[500px] pointer-events-none"
             />
           </div>
         </div>
 
         <div className="space-y-8 mt-10">
           <h1
-            className={`text-6xl font-bold tracking-wider text-gray-900 ${alegreya.className}`}
+            className={`text-5xl tracking-wider text-gray-900 ${alegreya.className}`}
           >
-            Nice to meet you!
+            Hello from{" "}
+            <span className="bg-slate-600 font-bold bg-gradient-to-r from-purple-300 to-blue-400 text-transparent bg-clip-text">
+              Osh!
+            </span>
           </h1>
 
           <div className="space-y-6 text-gray-600 leading-relaxed">
             <p>
-              Hackney started as a small interior design firm in downtown
-              Michigan, aiming to help home buyers to make do with the new space
-              that they had acquired. It soon became obvious that it would make
-              sense to help our clients see beyond the walls and floor plans,
-              and be there with them from the get-go.
+              Illustration is my science in motion.
+              <br /> <br /> Hi, I’m Osh—a freelance Scientific Illustrator and
+              Visual Communicator with a Master’s in Biology and a minor in
+              Science Education. Based in India, I transform complex scientific
+              ideas into clear, engaging visuals. <br />
+              <br />
+              Scientific knowledge drives progress, but its true impact relies
+              on how well it is communicated. With a passion for immunology and
+              expertise in biology and design, I create visuals that make
+              research accessible and meaningful. By using visual language to
+              bridge gaps across cultures and audiences, I help scientists
+              connect and make their work stand out. When I’m not working on
+              visuals, you’ll find me skating, practicing yoga, or exploring new
+              ways to express my creativity through painting.
             </p>
 
-            <p>
-              Currently, we offer house realtor, interior design, and
-              architecture services in order to help our customers find their
-              forever homes as seamlessly and painlessly as possible. We value
-              our customers above everything else, meaning that we won't take
-              'OK' as an answer.
+            <p className="flex items-center gap-3">
+              <School size={44} />{" "}
+              <span className="font-bold">
+                IISER Mohali BS-MS integrated program
+              </span>
             </p>
           </div>
-
-          {/* <div className="pt-8">
-            <SocialLinks />
-          </div> */}
-          <Logo />
-          {/* <l-quantum size="100" speed="7" color="black"/> */}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
