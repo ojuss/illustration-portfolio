@@ -39,7 +39,6 @@ export default function Portfolio() {
         </div>
       <div className="container px-4 mx-auto overflow-x-scroll max-h-screen">
         
-
         <div className="gallery-grid ">
           {artworks.map((artwork, index) => (
             <motion.div
