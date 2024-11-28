@@ -1,11 +1,7 @@
 "use client";
 
 import { helix } from "ldrs";
-import { Lato, Alegreya } from "next/font/google";
 import { useEffect } from "react";
-
-const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
-const alegreya = Alegreya({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function Hero() {
   useEffect(() => {
@@ -25,18 +21,14 @@ export default function Hero() {
               <l-helix size="110" speed="7" color="white"></l-helix>
             </div>
 
-            <h1
-              className={`text-4xl md:text-6xl mb-6 text-white ${alegreya.className}`}
-            >
+            <h1 className={`text-4xl md:text-6xl mb-6 text-white `}>
               Illustrating Ideas, Illuminating{" "}
               <span className="bg-slate-600 bg-gradient-to-r from-cyan-300 to-pink-600 text-transparent bg-clip-text">
                 Science.
               </span>
             </h1>
 
-            <p
-              className={`text-lg text-gray-50 max-w-xl mb-8 font-bold ${lato.className}`}
-            >
+            <p className={`text-lg text-gray-50 max-w-xl mb-8 font-bold`}>
               I create designs that make scientific knowledge clear, engaging,
               and accessible to a broader audience.
             </p>

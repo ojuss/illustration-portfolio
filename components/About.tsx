@@ -2,10 +2,8 @@ import React from "react";
 import Logo from "./Logo";
 import OshPic2 from "@/assets/oshpfp2.jpg";
 import Image from "next/image";
-import { Alegreya } from "next/font/google";
-import { School } from "lucide-react";
 
-const alegreya = Alegreya({ subsets: ["latin"], weight: ["400", "700"] });
+import { School } from "lucide-react";
 
 const AboutSection = () => {
   return (
@@ -26,9 +24,7 @@ const AboutSection = () => {
         </div>
 
         <div className="space-y-8 mt-10">
-          <h1
-            className={`text-5xl tracking-wider text-gray-900 ${alegreya.className}`}
-          >
+          <h1 className={`text-5xl tracking-wider text-gray-900`}>
             Hello from{" "}
             <span className="bg-slate-600 font-bold bg-gradient-to-r from-purple-300 to-blue-400 text-transparent bg-clip-text">
               Osh!

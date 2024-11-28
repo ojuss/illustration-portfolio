@@ -1,10 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Alegreya } from "next/font/google";
 import SocialLinks from "./SocialLinks";
-
-const alegreya = Alegreya({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function Contact() {
   return (
@@ -17,11 +14,10 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className={`text-3xl mb-4 text-black  ${alegreya.className}`}>
+          <h2 className={`text-3xl mb-4 text-black`}>
             Have a story to tell through scientific art? Let's bring it to
             life!"
           </h2>
-          
         </motion.div>
         <SocialLinks />
       </div>

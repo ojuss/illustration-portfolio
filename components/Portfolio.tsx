@@ -3,24 +3,21 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Pic1 from "@/assets/1 CELL.png";
-import Pic2 from "@/assets/0056.png";
-import Pic3 from "@/assets/membrane.png";
-import Pic4 from "@/assets/closer interaction view_.png";
-import Pic5 from "@/assets/Osh sub2.png";
-import Pic6 from "@/assets/graphene.png";
-import Pic7 from "@/assets/hb, rbc.png";
-import Pic8 from "@/assets/Osh sars cov2 illustration.png";
-import Pic9 from "@/assets/Osh submission.png";
-import Pic10 from "@/assets/osh submission1.png";
-import Pic11 from "@/assets/osh_molecule sub.png";
-import Pic12 from "@/assets/proj1 innate immunity-02.jpg";
-import Pic13 from "@/assets/proj2 adaptive immunity-01.jpg";
-import Pic14 from "@/assets/VHH.png";
-import Pic15 from "@/assets/virus.png";
-import { Alegreya } from "next/font/google";
-
-const alegreya = Alegreya({ subsets: ["latin"], weight: ["400", "700"] });
+import Pic1 from "@/public/assets/1 CELL.png";
+import Pic2 from "/assets/0056.png";
+import Pic3 from "/assets/membrane.png";
+import Pic4 from "/assets/closer interaction view_.png";
+import Pic5 from "/assets/Osh sub2.png";
+import Pic6 from "/assets/graphene.png";
+import Pic7 from "/assets/hb, rbc.png";
+import Pic8 from "/assets/Osh sars cov2 illustration.png";
+import Pic9 from "/assets/Osh submission.png";
+import Pic10 from "/assets/osh submission1.png";
+import Pic11 from "/assets/osh_molecule sub.png";
+import Pic12 from "/assets/proj1 innate immunity-02.jpg";
+import Pic13 from "/assets/proj2 adaptive immunity-01.jpg";
+import Pic14 from "/assets/VHH.png";
+import Pic15 from "/assets/virus.png";
 
 export default function Portfolio() {
   const [selectedImage, setSelectedImage] = useState<
@@ -30,7 +27,7 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="py-20 bg-gray-100">
       <div className="text-center mb-16">
-          <h2 className={`text-5xl mb-4 text-black ${alegreya.className}`}>
+          <h2 className={`text-6xl mb-4 text-black `}>
             Portfolio
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -79,7 +76,7 @@ export default function Portfolio() {
 
       {selectedImage && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center lg:px-40 p-4 z-50"
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50"
           onClick={() => setSelectedImage(null)}
         >
           <div className="relative">
@@ -87,7 +84,7 @@ export default function Portfolio() {
               src={selectedImage.image}
               alt={selectedImage.title}
               height={selectedImage.height}
-              className="object-contain pointer-events-none"
+              className="object-contain pointer-events-none p-20"
               priority
             />
           </div>
@@ -103,7 +100,7 @@ const artworks = [
     title: "Cell Structure",
     category: "Biology",
     image: Pic15,
-    height: 600,
+    height: 1000,
   },
   {
     id: 2,
@@ -117,7 +114,7 @@ const artworks = [
     title: "DNA Helix",
     category: "Molecular Biology",
     image: Pic1,
-    height: 600,
+    height: 800,
   },
   {
     id: 4,
@@ -138,7 +135,7 @@ const artworks = [
     title: "DNA Helix",
     category: "Molecular Biology",
     image: Pic6,
-    height: 600,
+    height: 800,
   },
   {
     id: 7,
@@ -159,7 +156,7 @@ const artworks = [
     title: "DNA Helix",
     category: "Molecular Biology",
     image: Pic9,
-    height: 600,
+    height: 1000,
   },
   {
     id: 10,
@@ -180,42 +177,42 @@ const artworks = [
     title: "DNA Helix",
     category: "Molecular Biology",
     image: Pic12,
-    height: 600,
+    height: 800,
   },
   {
     id: 13,
     title: "DNA Helix",
     category: "Molecular Biology",
     image: Pic13,
-    height: 600,
+    height: 1000,
   },
   {
     id: 14,
     title: "DNA Helix",
     category: "Molecular Biology",
     image: Pic14,
-    height: 600,
+    height: 800,
   },
   {
     id: 15,
     title: "DNA Helix",
     category: "Molecular Biology",
     image: Pic2,
-    height: 600,
+    height: 800,
   },
   {
     id: 16,
     title: "DNA Helix",
     category: "Molecular Biology",
     image: Pic13,
-    height: 600,
+    height: 1000,
   },
   {
     id: 17,
     title: "DNA Helix",
     category: "Molecular Biology",
     image: Pic14,
-    height: 600,
+    height: 1000,
   },
   
 ];

@@ -21,6 +21,14 @@
   --radius: 0.5rem;
 }
 
+body {
+  font-family: var(--font-lato);
+}
+ 
+h1, h2 {
+  font-family: var(--font-alegreya);
+}
+
 .gallery-grid {
   columns: 3 300px;
   column-gap: 0.6rem;
@@ -59,7 +67,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("../assets/virus.png");
+  background-image: url("../public/assets/virus.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
