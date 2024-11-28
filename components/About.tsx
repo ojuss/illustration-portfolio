@@ -3,7 +3,7 @@ import Logo from "./Logo";
 import OshPic2 from "@/assets/oshpfp2.jpg";
 import Image from "next/image";
 
-import { School } from "lucide-react";
+import { IoIosSchool } from "react-icons/io";
 
 const AboutSection = () => {
   return (
@@ -50,7 +50,7 @@ const AboutSection = () => {
             </p>
 
             <p className="flex items-center gap-3">
-              <School size={44} />{" "}
+              <IoIosSchool size={44} />{" "}
               <span className="font-bold">
                 IISER Mohali BS-MS integrated program
               </span>

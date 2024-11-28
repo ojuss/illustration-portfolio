@@ -3,21 +3,21 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Pic1 from "@/public/assets/1 CELL.png";
-import Pic2 from "/assets/0056.png";
-import Pic3 from "/assets/membrane.png";
-import Pic4 from "/assets/closer interaction view_.png";
-import Pic5 from "/assets/Osh sub2.png";
-import Pic6 from "/assets/graphene.png";
-import Pic7 from "/assets/hb, rbc.png";
-import Pic8 from "/assets/Osh sars cov2 illustration.png";
-import Pic9 from "/assets/Osh submission.png";
-import Pic10 from "/assets/osh submission1.png";
-import Pic11 from "/assets/osh_molecule sub.png";
-import Pic12 from "/assets/proj1 innate immunity-02.jpg";
-import Pic13 from "/assets/proj2 adaptive immunity-01.jpg";
-import Pic14 from "/assets/VHH.png";
-import Pic15 from "/assets/virus.png";
+import Pic1 from "@/assets/1 CELL.png";
+import Pic2 from "@/assets/0056.png";
+import Pic3 from "@/assets/membrane.png";
+import Pic4 from "@/assets/closer interaction view_.png";
+import Pic5 from "@/assets/Osh sub2.png";
+import Pic6 from "@/assets/graphene.png";
+import Pic7 from "@/assets/hb, rbc.png";
+import Pic8 from "@/assets/Osh sars cov2 illustration.png";
+import Pic9 from "@/assets/Osh submission.png";
+import Pic10 from "@/assets/osh submission1.png";
+import Pic11 from "@/assets/osh_molecule sub.png";
+import Pic12 from "@/assets/proj1 innate immunity-02.jpg";
+import Pic13 from "@/assets/proj2 adaptive immunity-01.jpg";
+import Pic14 from "@/assets/VHH.png";
+import Pic15 from "@/assets/virus.png";
 
 export default function Portfolio() {
   const [selectedImage, setSelectedImage] = useState<

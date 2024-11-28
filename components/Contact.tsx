@@ -5,7 +5,7 @@ import SocialLinks from "./SocialLinks";
 
 export default function Contact() {
   return (
-    <section className="py-20 bg-[#f3f3f4]">
+    <section className="py-12 bg-[#f3f3f4]">
       <div className="container px-4 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -16,7 +16,7 @@ export default function Contact() {
         >
           <h2 className={`text-3xl mb-4 text-black`}>
             Have a story to tell through scientific art? Let's bring it to
-            life!"
+            life!
           </h2>
         </motion.div>
         <SocialLinks />
