@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Pic1 from "@/assets/1 CELL.png";
 import Pic2 from "@/assets/0056.png";
-import Pic3 from "@/assets/ago2-mirna img.png";
+import Pic3 from "@/assets/membrane.png";
 import Pic4 from "@/assets/closer interaction view_.png";
 import Pic5 from "@/assets/Osh sub2.png";
 import Pic6 from "@/assets/graphene.png";
