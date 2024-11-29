@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
-import OshPic2 from "@/assets/oshpfp2.jpg";
+import OshPic2 from "@/assets/oshcropped.jpg";
 import Image from "next/image";
 
 import { IoIosSchool } from "react-icons/io";
@@ -18,7 +18,8 @@ import { IoIosSchool } from "react-icons/io";
             <Image
               src={OshPic2}
               alt="Osh's Pic"
-              className="w-auto h-[450px] lg:h-[550px] md:h-[500px] pointer-events-none"
+              className="w-auto h-[450px] lg:h-[550px] md:h-[500px] pointer-events-none rounded-lg"
+              priority
             />
           </div>
         </div>

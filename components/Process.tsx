@@ -29,7 +29,7 @@ export default function Process() {
   return (
     <section className="relative bg-gray-100 flex justify-center flex-col">
       <div className="text-center py-10">
-        <h2 className="text-5xl mb-4 text-black" >Process</h2>
+        <h2 className="text-4xl mb-4 text-black" >Process</h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
           
         </p>

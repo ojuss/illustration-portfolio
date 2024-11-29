@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Pic1 from "@/assets/1 CELL.png";
@@ -23,6 +23,13 @@ export default function Portfolio() {
   const [selectedImage, setSelectedImage] = useState<
     (typeof artworks)[0] | null
   >(null);
+  useEffect(() => {
+    if (selectedImage) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [selectedImage]);
 
   return (
     <section id="portfolio" className="py-20 bg-gray-100">
@@ -52,7 +59,7 @@ export default function Portfolio() {
                   src={artwork.image}
                   alt={artwork.title}
                   fill
-                  className="absolute inset-0 object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="absolute inset-0 object-cover transition-transform duration-300 group-hover:scale-105 rounded-lg"
                   quality={50}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -73,18 +80,25 @@ export default function Portfolio() {
 
       {selectedImage && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50"
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-8 z-50"
           onClick={() => setSelectedImage(null)}
         >
-          <div className="relative">
+          <div className="relative max-w-2xl max-h-xl mx-auto w-full">
             <Image
               src={selectedImage.image}
               alt={selectedImage.title}
               height={selectedImage.height}
-              className="object-contain pointer-events-none p-20"
+              className="object-contain pointer-events-none"
               priority
             />
           </div>
+          <button
+            className="absolute top-8 right-8 text-white text-2xl z-10"
+            onClick={() => setSelectedImage(null)}
+            aria-label="Close modal"
+          >
+            &times;
+          </button>
         </div>
       )}
     </section>
