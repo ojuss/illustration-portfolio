@@ -27,15 +27,12 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="py-20 bg-gray-100">
       <div className="text-center mb-16">
-          <h2 className={`text-6xl mb-4 text-black `}>
-            Portfolio
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            A showcase of ideas transformed into art.
-          </p>
-        </div>
-      <div className="container px-4 mx-auto overflow-x-scroll max-h-screen">
-        
+        <h2 className="text-6xl mb-4 text-black" >Portfolio</h2>
+        <p className="text-muted-foreground max-w-2xl mx-auto">
+          A showcase of ideas transformed into art.
+        </p>
+      </div>
+      <div className="container px-4 mx-auto ">
         <div className="gallery-grid ">
           {artworks.map((artwork, index) => (
             <motion.div
@@ -56,7 +53,7 @@ export default function Portfolio() {
                   alt={artwork.title}
                   fill
                   className="absolute inset-0 object-cover transition-transform duration-300 group-hover:scale-105"
-                  priority
+                  quality={50}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-4">
@@ -214,5 +211,4 @@ const artworks = [
     image: Pic14,
     height: 1000,
   },
-  
 ];

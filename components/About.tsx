@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import { IoIosSchool } from "react-icons/io";
 
-const AboutSection = () => {
+ const Ouch = () => {
   return (
     <section
       id="about"
@@ -34,8 +34,8 @@ const AboutSection = () => {
           <div className="space-y-6 text-gray-600 leading-relaxed">
             <p>
               Illustration is my science in motion.
-              <br /> <br /> Hi, I’m Osh—a freelance Scientific Illustrator and
-              Visual Communicator with a Master’s in Biology and a minor in
+              <br /> <br /> Hi, I'm Osh—a freelance Scientific Illustrator and
+              Visual Communicator with a Master's in Biology and a minor in
               Science Education. Based in India, I transform complex scientific
               ideas into clear, engaging visuals. <br />
               <br />
@@ -44,8 +44,8 @@ const AboutSection = () => {
               expertise in biology and design, I create visuals that make
               research accessible and meaningful. By using visual language to
               bridge gaps across cultures and audiences, I help scientists
-              connect and make their work stand out. When I’m not working on
-              visuals, you’ll find me skating, practicing yoga, or exploring new
+              connect and make their work stand out. When I'm not working on
+              visuals, you'll find me skating, practicing yoga, or exploring new
               ways to express my creativity through painting.
             </p>
 
@@ -62,4 +62,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default Ouch;

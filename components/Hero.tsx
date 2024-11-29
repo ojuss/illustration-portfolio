@@ -3,6 +3,7 @@
 import { helix } from "ldrs";
 import { useEffect } from "react";
 
+
 export default function Hero() {
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -19,6 +20,7 @@ export default function Hero() {
           <div className="z-10">
             <div className="mb-8 inline-block">
               <l-helix size="110" speed="7" color="white"></l-helix>
+              
             </div>
 
             <h1 className={`text-4xl md:text-6xl mb-6 text-white `}>
