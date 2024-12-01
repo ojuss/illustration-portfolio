@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import RBC from "@/public/1RBC, hb, oxy.png";
-import Virus from "@/public/2Virus.png";
+import Virus from "@/public/2virus.png";
 import Plasama from "@/public/3Plasmamembrane.png";
 import Icosphere from "@/public/4Abstract_icosphere_gif.gif";
 import Mesh from "@/public/5Dark_mesh gif.gif"
