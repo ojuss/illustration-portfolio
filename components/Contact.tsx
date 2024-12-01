@@ -36,7 +36,7 @@ export default function Contact() {
               <FaLinkedin className="w-10 h-10" />
             </a>
             <a
-              href="https://www.linkedin.com/in/osh-241949201/"
+              href="https://x.com/osh_gupta00"
               className="text-gray-800 hover:text-gray-600 transition-colors"
             >
               <FaSquareXTwitter className="w-10 h-10" />

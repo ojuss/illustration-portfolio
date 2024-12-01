@@ -3,21 +3,13 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Pic1 from "@/assets/1 CELL.png";
-import Pic2 from "@/assets/0056.png";
-import Pic3 from "@/assets/membrane.png";
-import Pic4 from "@/assets/closer interaction view_.png";
-import Pic5 from "@/assets/Osh sub2.png";
-import Pic6 from "@/assets/graphene.png";
-import Pic7 from "@/assets/hb, rbc.png";
-import Pic8 from "@/assets/Osh sars cov2 illustration.png";
-import Pic9 from "@/assets/Osh submission.png";
-import Pic10 from "@/assets/osh submission1.png";
-import Pic11 from "@/assets/osh_molecule sub.png";
-import Pic12 from "@/assets/proj1 innate immunity-02.jpg";
-import Pic13 from "@/assets/proj2 adaptive immunity-01.jpg";
-import Pic14 from "@/assets/VHH.png";
-import Pic15 from "@/assets/virus.png";
+import RBC from "@/public/1RBC, hb, oxy.png";
+import Virus from "@/public/2Virus.png";
+import Plasama from "@/public/3Plasmamembrane.png";
+import Icosphere from "@/public/4Abstract_icosphere_gif.gif";
+import Mesh from "@/public/5Dark_mesh gif.gif"
+import DNA from "@/public/6DNA to chromosome.png"
+import RBC_HB from "@/public/7RBC_Hb structure.png"
 
 export default function Portfolio() {
   const [selectedImage, setSelectedImage] = useState<
@@ -34,7 +26,7 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="py-20 bg-gray-100">
       <div className="text-center mb-16">
-        <h2 className="text-6xl mb-4 text-black" >Portfolio</h2>
+        <h2 className="text-6xl mb-4 text-black">Portfolio</h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
           A showcase of ideas transformed into art.
         </p>
@@ -59,17 +51,14 @@ export default function Portfolio() {
                   src={artwork.image}
                   alt={artwork.title}
                   fill
-                  className="absolute inset-0 object-cover transition-transform duration-300 group-hover:scale-105 rounded-lg"
-                  quality={50}
+                  className="absolute inset-0 object-cover transition-transform duration-300 group-hover:scale-105 rounded-lg max-w-full"
+                  quality={25}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-4">
                     <h3 className="text-lg font-semibold text-primary mb-1">
                       {artwork.title}
                     </h3>
-                    <p className="text-sm text-primary/80">
-                      {artwork.category}
-                    </p>
                   </div>
                 </div>
               </div>
@@ -89,7 +78,8 @@ export default function Portfolio() {
               alt={selectedImage.title}
               height={selectedImage.height}
               className="object-contain pointer-events-none"
-              priority
+              loading="lazy"
+              quality={100}
             />
           </div>
           <button
@@ -108,121 +98,49 @@ export default function Portfolio() {
 const artworks = [
   {
     id: 1,
-    title: "Cell Structure",
-    category: "Biology",
-    image: Pic15,
+    title: "RBC, HB, OXY",
+    image: RBC,
     height: 1000,
   },
   {
     id: 2,
     title: "Neural Network",
-    category: "Neuroscience",
-    image: Pic3,
-    height: 600,
+    image: Virus,
+    height: 800,
   },
   {
     id: 3,
     title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Pic1,
-    height: 800,
+
+    image: Plasama,
+    height: 600,
   },
   {
     id: 4,
     title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Pic4,
+
+    image: Icosphere,
     height: 600,
   },
   {
     id: 5,
     title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Pic5,
+
+    image: Mesh,
     height: 600,
   },
   {
     id: 6,
     title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Pic6,
+
+    image: DNA,
     height: 800,
   },
   {
     id: 7,
     title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Pic7,
-    height: 600,
-  },
-  {
-    id: 8,
-    title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Pic8,
-    height: 600,
-  },
-  {
-    id: 9,
-    title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Pic9,
+
+    image: RBC_HB,
     height: 1000,
-  },
-  {
-    id: 10,
-    title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Pic10,
-    height: 600,
-  },
-  {
-    id: 11,
-    title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Pic11,
-    height: 600,
-  },
-  {
-    id: 12,
-    title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Pic12,
-    height: 800,
-  },
-  {
-    id: 13,
-    title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Pic13,
-    height: 1000,
-  },
-  {
-    id: 14,
-    title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Pic14,
-    height: 800,
-  },
-  {
-    id: 15,
-    title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Pic2,
-    height: 800,
-  },
-  {
-    id: 16,
-    title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Pic13,
-    height: 1000,
-  },
-  {
-    id: 17,
-    title: "DNA Helix",
-    category: "Molecular Biology",
-    image: Pic14,
-    height: 1000,
-  },
+  }
 ];

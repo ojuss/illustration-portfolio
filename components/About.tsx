@@ -1,11 +1,11 @@
 import React from "react";
 import Logo from "./Logo";
-import OshPic2 from "@/assets/oshcropped.jpg";
+import Osh from "@/public/oshabout.webp";
 import Image from "next/image";
 
 import { IoIosSchool } from "react-icons/io";
 
- const Ouch = () => {
+ const About = () => {
   return (
     <section
       id="about"
@@ -16,10 +16,11 @@ import { IoIosSchool } from "react-icons/io";
           <Logo />
           <div className="mt-12 relative">
             <Image
-              src={OshPic2}
+              src={Osh}
               alt="Osh's Pic"
               className="w-auto h-[450px] lg:h-[550px] md:h-[500px] pointer-events-none rounded-lg"
               priority
+              quality={65}
             />
           </div>
         </div>
@@ -63,4 +64,4 @@ import { IoIosSchool } from "react-icons/io";
   );
 };
 
-export default Ouch;
+export default About;
