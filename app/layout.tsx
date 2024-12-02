@@ -7,7 +7,7 @@ const lato = Lato({ subsets: ["latin"], weight: ["400", "700"], variable: "--fon
 const alegreya = Alegreya({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-alegreya" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://osh-designs.vercel.app'),
+  metadataBase: new URL('https://www.oshgupta.com'),
   title: "Osh | Illustrations",
   description: "I create designs that make scientific knowledge clear, engaging, and accessible to a broader audience.",
   icons: {
