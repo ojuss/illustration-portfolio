@@ -176,7 +176,7 @@ const artworksOrdered = [
   },
   {
     id: 6,
-    title: "Plasama Membrane",
+    title: "Plasma Membrane",
     image: PlasmaMembrane,
     height: 800,
   },
