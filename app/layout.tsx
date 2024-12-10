@@ -1,15 +1,24 @@
 import "./globals.css";
 import type { Metadata } from "next";
-
+import { Analytics } from "@vercel/analytics/react";
 import { Alegreya, Lato } from "next/font/google";
 
-const lato = Lato({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-lato" });
-const alegreya = Alegreya({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-alegreya" });
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-lato",
+});
+const alegreya = Alegreya({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-alegreya",
+});
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.oshgupta.com'),
+  metadataBase: new URL("https://www.oshgupta.com"),
   title: "Osh | Illustrations",
-  description: "I create designs that make scientific knowledge clear, engaging, and accessible to a broader audience.",
+  description:
+    "I create designs that make scientific knowledge clear, engaging, and accessible to a broader audience.",
   icons: {
     icon: "favicon.ico",
   },
@@ -36,6 +45,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={` ${lato.variable} ${alegreya.variable}`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
