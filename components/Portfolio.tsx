@@ -28,7 +28,6 @@ import Cell from "@/public/21 CELL.webp";
 import CellStructure from "@/public/22Cell_structure.webp";
 import CellEvolution from "@/public/23 Cell_evolution.webp";
 
-
 export default function Portfolio() {
   const [selectedImage, setSelectedImage] = useState<
     (typeof artworksOrdered)[0] | null
@@ -84,7 +83,9 @@ export default function Portfolio() {
           ))}
         </div>
       </div>
-      <h2 className="text-3xl mb-4 text-gray-600 text-center py-12">Some more of my work</h2>
+      <h2 className="text-3xl mb-4 text-gray-600 text-center py-12">
+        Some more of my work
+      </h2>
       <div className="container px-4 mx-auto max-h-screen overflow-y-scroll">
         <div className="gallery-grid ">
           {artworksUnordered.map((artwork, index) => (
@@ -136,6 +137,9 @@ export default function Portfolio() {
               quality={100}
             />
           </div>
+          <h3 className="text-white text-2xl absolute bottom-6 left-6 md:bottom-8 md:left-8">
+            {selectedImage.title}
+          </h3>
           <button
             className="absolute top-8 right-8 text-white text-2xl z-10"
             onClick={() => setSelectedImage(null)}
