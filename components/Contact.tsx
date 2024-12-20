@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-
+import { AiFillInstagram } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import { IoMdMail } from "react-icons/io";
+import { IoMail } from "react-icons/io5";
 
 export default function Contact() {
   return (
@@ -24,10 +24,10 @@ export default function Contact() {
         <div className="flex gap-10 items-center justify-center flex-col">
           <div className="flex gap-10 items-center justify-center">
             <a
-              href="mailto:guptaosh00@gmail.com"
+              href="mailto:guptaosh365@gmail.com"
               className="text-gray-800 hover:text-gray-600 transition-colors"
             >
-              <IoMdMail className="w-11 h-11" />
+              <IoMail className="w-11 h-11" />
             </a>
             <a
               href="https://www.linkedin.com/in/osh-241949201/"
@@ -41,9 +41,15 @@ export default function Contact() {
             >
               <FaSquareXTwitter className="w-10 h-10" />
             </a>
+            <a
+              href="https://www.instagram.com/osh_mosis/"
+              className="text-gray-800 hover:text-gray-600 transition-colors"
+            >
+              <AiFillInstagram className="w-11 h-11" />
+            </a>
           </div>
           <p className="text-muted-foreground mb-4 md:mb-0">
-            © {new Date().getFullYear()} Osh Portfolio. All rights reserved.
+            Copyright © Osh Gupta - {new Date().getFullYear()}
           </p>
         </div>
       </div>

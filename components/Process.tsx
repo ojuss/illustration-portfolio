@@ -1,8 +1,6 @@
-
 import { FcCollaboration } from "react-icons/fc";
-import { FcBrokenLink } from "react-icons/fc";
 import { FcIdea } from "react-icons/fc";
-
+import { FcSerialTasks } from "react-icons/fc";
 
 const achievements = [
   {
@@ -18,7 +16,7 @@ const achievements = [
       "I'll create an initial draft of your visuals, and together, we'll refine it through feedback to ensure accuracy and clarity.",
   },
   {
-    icon: <FcBrokenLink className="w-10 h-10" />,
+    icon: <FcSerialTasks className="w-10 h-10" />,
     title: "Deliver",
     description:
       "Within a few revision rounds, your polished visuals are ready to communicate and engage audiences effectively.",
@@ -29,10 +27,8 @@ export default function Process() {
   return (
     <section className="relative bg-gray-100 flex justify-center flex-col">
       <div className="text-center py-10">
-        <h2 className="text-4xl mb-4 text-black" >Process</h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto">
-          
-        </p>
+        <h2 className="text-4xl mb-4 text-black">Process</h2>
+        <p className="text-muted-foreground max-w-2xl mx-auto"></p>
       </div>
       <div className="container px-4 mx-auto relative ">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20 ">

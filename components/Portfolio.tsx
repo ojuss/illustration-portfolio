@@ -41,14 +41,14 @@ export default function Portfolio() {
   }, [selectedImage]);
 
   return (
-    <section id="portfolio" className="py-20 bg-gray-100">
+    <section id="portfolio" className="py-20 px-6 bg-gray-100">
       <div className="text-center mb-16">
-        <h2 className="text-6xl mb-4 text-black">Portfolio</h2>
+        <h1 className="text-5xl mb-4 text-black">Portfolio</h1>
         <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
           A showcase of my recent ideas transformed into art.
         </p>
       </div>
-      <div className="container px-4 mx-auto ">
+      <div className="container mx-auto ">
         <div className="gallery-grid ">
           {artworksOrdered.map((artwork, index) => (
             <motion.div
@@ -83,10 +83,10 @@ export default function Portfolio() {
           ))}
         </div>
       </div>
-      <h2 className="text-3xl mb-4 text-gray-600 text-center py-12">
+      <h2 className="text-3xl mb-4 text-gray-600 text-center py-10">
         Some more of my work
       </h2>
-      <div className="container px-4 mx-auto max-h-screen overflow-y-scroll">
+      <div className="container mx-auto max-h-screen overflow-y-scroll">
         <div className="gallery-grid ">
           {artworksUnordered.map((artwork, index) => (
             <motion.div
